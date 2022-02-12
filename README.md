@@ -1,4 +1,6 @@
 # Loginator
+![image](https://www.polyplugins.com/plugins/loginator/2.0/1.jpg)
+![image](https://www.polyplugins.com/plugins/loginator/2.0/2.jpg)
 Debugging WordPress can sometimes be a pain, our goal is to make it easy, which is why Loginator was built with this in mind. From creating a log folder, to securing it from prying eyes, Loginator is here to save you time and resources, so you can focus on creating astonishing applications. Once activated, Loginator essentially becomes a core part of WordPress, which is why we disable deactivation as it is highly recommended to not uninstall Loginator until you have removed all references to the loginator function inside your WordPress installation. **We recommend setting this as a Must Use plugin to further prevent deactivation as this will trigger errors if any instances of logging are left after deactivation. We recommend testing this plugin in your staging environment to make sure it's fully compatible with your WordPress installation.**
 
 # Features
