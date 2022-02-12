@@ -3,6 +3,7 @@ Debugging WordPress can sometimes be a pain, our goal is to make it easy, which 
 
 # Features
 - Incorporates our [Settings Class for WordPress](https://github.com/PolyPlugins/Settings-Class-for-Wordpress "Settings Class for WordPress")
+- OOP port of our previous [Loginator](https://wordpress.org/plugins/loginator/) plugin
 - Global Enable/Disable
 - Flags for Errors, Debug, and Info
 - Creates separate files based on flags
