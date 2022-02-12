@@ -32,7 +32,6 @@ $args = array(
   'pipedream' => false,
 );
 
-
 Loginator::info('log data here', $args);
 `
 
