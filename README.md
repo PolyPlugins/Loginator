@@ -24,7 +24,7 @@ Loginator::debug('log data here'); // PipeDream flag is set to true by default
 
 You can also pass arguments
 
-`
+```
 $args = array(
   'flag'      => 'd',
   'id'        => 23,
@@ -33,7 +33,7 @@ $args = array(
 );
 
 Loginator::info('log data here', $args);
-`
+```
 
 # Upgrading
 Since Loginator 2.0 is essentially rebuilt from the ground up using OOP, we wouldn't advise upgrading just yet until we incorporate a method for handling the old loginator function, otherwise you'll have to manually update all of the old loginator functions to the new static methods.
