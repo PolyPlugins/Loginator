@@ -5,7 +5,7 @@ Debugging WordPress can sometimes be a pain, our goal is to make it easy, which 
 - Incorporates our [Settings Class for WordPress](https://github.com/PolyPlugins/Settings-Class-for-Wordpress "Settings Class for WordPress")
 - OOP port of our previous [Loginator](https://wordpress.org/plugins/loginator/) plugin
 - Global Enable/Disable
-- Flags for Errors, Debug, and Info
+- Flags for emergency, alert, critical, error, warning, notice, info, debug, and success
 - Creates separate files based on flags
 - Auto detect if data being logged is an array and pretty prints it to the file
 - Disable Loginator deactivation to prevent function not existing errors
@@ -23,6 +23,7 @@ Loginator::warning('log data here');
 Loginator::notice('log data here');
 Loginator::info('log data here');
 Loginator::debug('log data here'); // PipeDream flag is set to true by default
+Loginator::success('log data here');
 ```
 
 You can also pass arguments
