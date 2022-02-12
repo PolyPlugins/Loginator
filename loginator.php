@@ -2,8 +2,8 @@
 
 /**
  * Plugin Name: Loginator
- * Plugin URI: https://www.polyplugins.com/product/loginator/
- * Description: Adds a simple global function for logging to files for developers. 
+ * Plugin URI: https://github.com/PolyPlugins/Loginator/
+ * Description: Adds simple global methods for logging to files for developers. 
  * Version: 2.0.0
  * Author: Poly Plugins
  * Author URI: https://www.polyplugins.com
