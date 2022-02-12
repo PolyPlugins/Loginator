@@ -28,6 +28,15 @@ class Loginator {
   private $plugin;
 
   /**
+	 * Plugin basename.
+	 *
+	 * @since    1.0.0
+	 * @access   private
+	 * @var      string    $plugin_basename    Get basename of plugin.
+	 */
+  private $plugin_basename;
+
+  /**
 	 * The ID of this plugin.
 	 *
 	 * @since    1.0.0
@@ -84,6 +93,7 @@ class Loginator {
   public function __construct()
   {
     $this->plugin           = __FILE__;
+    $this->plugin_basename  = plugin_basename($this->plugin);
     $this->plugin_slug      = dirname( plugin_basename( $this->plugin ) );
     $this->plugin_slug_id   = str_replace( '-', '_', $this->plugin_slug );
     $this->options_name     = $this->plugin_slug_id . '_options';
@@ -120,6 +130,8 @@ class Loginator {
     add_action( 'admin_init', array( $this, 'admin_init' ));
 		add_action( 'admin_menu', array( $this, 'admin_menu' ));
     add_action( 'admin_enqueue_scripts', array( $this, 'enqueue' ));
+    add_action( 'plugin_action_links_' . $this->plugin_basename, array( $this, 'plugin_action_links_loginator' ));
+    
   }
   
   /**
@@ -482,6 +494,17 @@ class Loginator {
       $contents = 'Order Allow,Deny' . PHP_EOL . 'Deny from All';
       file_put_contents($htaccess, $contents);
     }
+  }
+
+  // Plugin Page CTAs
+  public function plugin_action_links_loginator($links)
+  {
+    // Prevent uninstallation as once developers start using this plugin, it should never be uninstalled as it will result in errors anywhere you are logging.
+    unset($links['deactivate']);
+    // Add settings CTA
+    $settings_cta = '<a href="' . admin_url('/options-general.php?page=loginator') . '" style="color: orange; font-weight: 700;">Settings</a>';
+    array_unshift($links, $settings_cta);
+    return $links;
   }
 }
 
