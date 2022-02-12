@@ -13,6 +13,7 @@ Debugging WordPress can sometimes be a pain, our goal is to make it easy, which 
 - Our beautiful comments follow WordPress Developer Standards, that when paired with Visual Studio Code or other supporting IDE’s will elaborately explain how to use the loginator methods.
 
 # Usage
+```
 Loginator::emergency('log data here'); // Email triggers to site admin or configured emails
 Loginator::alert('log data here');
 Loginator::critical('log data here'); // Email triggers to site admin or configured emails
@@ -21,6 +22,7 @@ Loginator::warning('log data here');
 Loginator::notice('log data here');
 Loginator::info('log data here');
 Loginator::debug('log data here'); // PipeDream flag is set to true by default
+```
 
 You can also pass arguments
 
