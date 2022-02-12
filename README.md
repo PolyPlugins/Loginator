@@ -10,7 +10,7 @@ Debugging WordPress can sometimes be a pain, our goal is to make it easy, which 
 - Flags for emergency, alert, critical, error, warning, notice, info, debug, and success
 - Creates separate files based on flags
 - Auto detect if data being logged is an array and pretty prints it to the file
-- Disable Loginator deactivation to prevent function not existing errors
+- Disable Loginator deactivation to prevent class not existing errors
 - Email on CRITICAL and EMERGENCY flag
 - Pipe Dream logging
 - Our beautiful comments follow WordPress Developer Standards, that when paired with Visual Studio Code or other supporting IDE’s will elaborately explain how to use the loginator methods.
