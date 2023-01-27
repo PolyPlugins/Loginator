@@ -1,5 +1,5 @@
 # Deprecated
-This is now managed on the [WordPress Directory](https://wordpress.org/plugins/loginator/). If you are upgrading from the Github version, you will need to enable Loginator from the settings as logging is disabled by default.
+This is now managed on the [WordPress Directory](https://wordpress.org/plugins/loginator/). If you are upgrading from the Github version, you will need to re-enable Loginator from the settings as logging is disabled by default.
 
 # Loginator
 ![image](https://www.polyplugins.com/plugins/loginator/2.0/1.jpg)
